@@ -1,3 +1,31 @@
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em; 
+  padding: 1em;
+}
+
+.card {
+  flex: 1 1 30%; 
+  box-sizing: border-box;
+  background-color: white;
+  padding: 1em;
+  margin: 0.5em 0; 
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 45%; 
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    flex: 1 1 100%; 
+  }
+}
+
+
 body {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 1em;
